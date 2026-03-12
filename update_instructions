@@ -1,0 +1,14 @@
+# 1) Go to your repo
+cd "/Users/Moses/Desktop/My Writing Career/Code Projects/Games/BlacksmithBlues"
+
+# 2) Replace the hosted build (docs) with the new build
+rm -rf docs
+mkdir -p docs
+cp -R "/Users/Moses/Desktop/My Writing Career/Code Projects/Games/BlacksmithBlues/BuildWebGL/BlacksmithBluesTest4/Build" docs/
+cp -R "/Users/Moses/Desktop/My Writing Career/Code Projects/Games/BlacksmithBlues/BuildWebGL/BlacksmithBluesTest4/TemplateData" docs/
+cp "/Users/Moses/Desktop/My Writing Career/Code Projects/Games/BlacksmithBlues/BuildWebGL/BlacksmithBluesTest4/index.html" docs/
+
+# 3) Commit + push
+git add docs
+git commit -m "Update WebGL build"
+git push
